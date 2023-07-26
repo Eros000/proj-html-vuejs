@@ -118,15 +118,42 @@ export default {
                     
                     <a href="#">
 
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>
+                            Become an Instructor
+                        </span>
+
                     </a>
 
                     <a href="#">
+
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>
+                            For Enterprise
+                        </span>
                         
                     </a>
 
                 </div>
 
                 <div class="header-center-signup">
+
+                    <a href="#">
+
+                        <i class="fa-regular fa-user"></i>
+                        <span>
+                            Log in
+                        </span>
+
+                    </a>
+
+
+                    <button>
+                        SIGN UP
+                    </button>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
 
                 </div>
 
@@ -137,6 +164,66 @@ export default {
         </div>
 
         <div class="header-bottom">
+
+            <div class="header-bottom-container">
+
+                <div class="header-bottom-navbar">
+
+                    <ul>
+                        <li>
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                            <a href="#">
+                                Business
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-palette"></i>
+
+                            <a href="#">
+                                Design
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            <a href="#">
+                                Development
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-face-smile"></i>
+
+                            <a href="#">
+                                Lifestyle
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-folder-open"></i>
+
+                            <a href="#">
+                                Office Productivity
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -219,7 +306,7 @@ export default {
 
         .header-center{
             padding-top: 30px;
-            
+            padding-bottom: 20px;
 
 
             .header-center-container{
@@ -252,6 +339,7 @@ export default {
                         }
 
                         button{
+                            cursor: pointer;
                             width: 42px;
                             height: 36px;
                             background-color: #457993;
@@ -262,15 +350,94 @@ export default {
                 }
 
                 .header-center-link{
+                    margin-left: 30px;
 
+
+                    a{
+                        text-decoration: none;
+                        color: gray;
+                        margin-left: 15px;
+                        font-size: small;
+
+
+                        i{
+                            margin-right: 5px;
+                            color: #457993;
+                        }
+                    }
                 }
 
                 .header-center-signup{
+                    margin-left: 15px;
 
+
+
+                    a{
+                        text-decoration: none;
+                        color: #457993;
+                        margin-left: 15px;
+                        font-size: small;
+
+                    }
+
+                    button{
+                        background-color: #FF4450;
+                        width: 100px;
+                        height: 45px;
+                        border: none;
+                        border-radius: 30px;
+                        color: white;
+                        margin-left: 15px;
+                    }
+
+                    i{
+                        margin-left: 12px;
+                        color: #457993;
+                    }
                 }
             }
 
 
+        }
+
+
+        .header-bottom{
+            background-color: #273044;
+            height: 50px;
+
+
+            .header-bottom-container{
+                max-width: 1200px;
+                margin: 0 auto;
+
+                .header-bottom-navbar{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    ul{
+                        display: flex;
+                        align-items: center;
+
+                        li{
+                            list-style: none;
+                            margin-left: 30px;
+                            font-size: 12.5px;
+
+                            i{
+                                color: white;
+                                margin-right: 5px;
+                            }
+
+                            a{
+                                text-decoration: none;
+                                color: white;
+
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
